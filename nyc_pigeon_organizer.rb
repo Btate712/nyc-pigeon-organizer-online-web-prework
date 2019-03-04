@@ -1,3 +1,8 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  data.each do |category, data_level_2|
+    binding.pry
+  end
+    
 end
