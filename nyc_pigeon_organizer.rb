@@ -11,4 +11,3 @@ def nyc_pigeon_organizer(data)
   end
   puts pigion_list
 end
-
