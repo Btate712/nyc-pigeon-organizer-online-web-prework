@@ -24,5 +24,5 @@ def nyc_pigeon_organizer(data)
       pigion_list[pigion][:lives].push(lives)
     end
   end
-  puts pigion_list
+  pigion_list
 end
