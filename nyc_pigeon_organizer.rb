@@ -11,8 +11,17 @@ def nyc_pigeon_organizer(data)
   end
   data[:color].each do |color, pigion_array|
     pigion_array.each do |pigion|
-      binding.pry
-      pigion_list[pigion][:color].push(color)
+      pigion_list[pigion][:color].push(color.to_s)
+    end
+  end
+  data[:gender].each do |gender, pigion_array|
+    pigion_array.each do |pigion|
+      pigion_list[pigion][:gender].push(gender.to_s)
+    end
+  end
+  data[:lives].each do |lives, pigion_array|
+    pigion_array.each do |pigion|
+      pigion_list[pigion][:lives].push(lives)
     end
   end
   puts pigion_list
