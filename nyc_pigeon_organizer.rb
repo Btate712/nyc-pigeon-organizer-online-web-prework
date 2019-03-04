@@ -9,5 +9,8 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  data[:color].each do |color, pigion_array|
+    binding.pry
+  end
   puts pigion_list
 end
