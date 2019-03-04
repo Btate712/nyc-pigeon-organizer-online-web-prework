@@ -5,9 +5,10 @@ def nyc_pigeon_organizer(data)
   data.each do |category, data_level_2|
     data_level_2.each do |category_level_2, pigions|
       pigions.each do |pigion|
-        pigion_list[pigion] = {}
+        pigion_list[pigion] = {:color=>[], :gender=>[], :lives=>[]}
       end
     end
   end
   puts pigion_list
 end
+
